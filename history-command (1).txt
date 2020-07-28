@@ -1,0 +1,64 @@
+    1  shutdown -h
+    2  shutdown -p
+    3  yum install zip unzip -y
+    4  clear
+    5  ls -all
+    6  unzip movies.zip
+    7  ls -all
+    8  unzip --help
+    9  unzip -p movies.zip
+   10  ls -all
+   11  unzip --help
+   12  unzip -p movies.zip movies.csv| movies.csv
+   13  unzip -p movies.zip | movies.csv
+   14  unzip -l
+   15  unzip -l movies.zip
+   16  unzip -p movies.zip ml-latest-small/movies.csv| movies.csv
+   17  unzip -p movies.zip ml-latest-small/movies.csv
+   18  unzip  movies.zip 
+   19  ls -all
+   20  ls ml-latest-small
+   21  cd ml-latest-small
+   22  ls -all
+   23  cat movies.csv
+   24  sort movies.csv
+   25  sort movies.csv | movies-sorted.csv
+   26  sort movies.csv> movies-sorted.csv
+   27  sort --field-separator='(' --key=1 movies.csv > movies-sorted-2.csv
+   28  clear
+   29  awk --help
+   30  cut -d '|' -f 2 movies.csv > movies-unsorted.csv
+   31  cut -d '|' -f 2 movies.csv 
+   32  cut -d ',' -f 2 movies.csv > movies-name.csv
+   33  sort -- help
+   34  sort --help
+   35  clear
+   36  sort --help
+   37  sort --help | grip left
+   38  sort --help | grep left
+   39  sort --help | grep 'left'
+   40  sort --help | more
+   41  sort --field-separator='(' --key=1 movies-name.csv > movies-sorted-2.csv
+   42  sort --field-separator='(' --key=2 movies-name.csv > movies-sorted-2.csv
+   43  history
+   44  history > history-command.txt
+   45  ls -all
+   46  sed -n -e '2,101p' movies-name.csv > movies-names-100.csv
+   47* 
+   48  clear
+   49  ls -all
+   50  clear
+   51  ls -all
+   52  ls ./
+   53  cp ./movies-names-100.csv movies-names-100-clean.cvs
+   54  ls -all
+   55  sort --field-separator='(' --key=2 movies-name-100-clean.csv > movies-sorted-3.csv
+   56  sort --field-separator='(' --key=2 movies-names-100-clean.csv > movies-sorted-3.csv
+   57  rn movies-names-100-clean.cvs movies-names-100-clean.csv
+   58  ren movies-names-100-clean.cvs movies-names-100-clean.csv
+   59  mv  movies-names-100-clean.cvs movies-names-100-clean.csv
+   60  ls -all
+   61  sort --field-separator='(' --key=2 movies-names-100-clean.csv > movies-sorted-3.csv
+   62  sed '/^"/d' movies-sorted-3.csv > movies-sorted-4.csv
+   63  sort --field-separator='(' --key=2 movies-sorted-4.csv > movies-sorted-5.csv
+   64  history > history-command.txt
